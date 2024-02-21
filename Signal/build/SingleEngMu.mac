@@ -1,0 +1,20 @@
+/control/verbose 2
+/run/verbose 2
+#/tracking/verbose 1 #very detailed info of track in every step
+/run/initialize
+/gps/particle mu-
+/gps/energy 1 GeV
+
+#/gps/position 0 0 -0.6  m
+/gps/position 0 0 -500100  mm
+/gps/direction 0.0  0.0  1.
+
+#/gps/pos/type Plane
+#/gps/pos/shape Square
+#/gps/pos/centre 0 0 -1.1 m
+#/gps/pos/halfx 50 cm
+#/gps/pos/halfy 50 cm
+#/gps/direction 0.0  0.0  1.
+
+/rlt/SetFileName root_file/mu1GeV_i.root
+/run/beamOn 10
